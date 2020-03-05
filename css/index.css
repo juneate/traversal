@@ -17,9 +17,7 @@ button {
 	padding: 1em;
 	background-color: lightgrey;
 }
-.calendar::before {
-	content: ".calendar"
-}
+
 .week {
 	position: relative;
 	list-style: none;
@@ -29,9 +27,7 @@ button {
 	grid-gap: 0.25em;
 	background-color: grey;
 }
-.week::before {
-	content: ".week"
-}
+
 .day {
 	flex-grow: 1;
 	text-align: center;
@@ -59,7 +55,6 @@ button {
 .sat { background-color: mediumpurple; }
 
 .calendar::before, .week::before {
-	content: "";
 	position: absolute;
 	top: 0.125em;
 	left: 0.5em;
@@ -67,7 +62,12 @@ button {
 	font-size: 0.75em;
 	font-weight: 900;
 }
-
+.week::before {
+	content: ".week"
+}
+.calendar::before {
+	content: ".calendar"
+}
 .console {
 	background-color: #333;
 	color: #fff;
