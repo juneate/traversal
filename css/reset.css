@@ -1,0 +1,16 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  height: 100%;
+  /* overflow-y: scroll; */
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
