@@ -25,11 +25,12 @@
           <li class="day sat">Saturday</li>
         </ul>
         <button class="clear">Clear all selected</button>
+        <!-- <button class="getweek">Select <code>.week</code></button> -->
       </section>
   
       <section class="controls">
         <section>
-          <h2>Select down from <code>.week</code></h2>
+          <h2>Select <em>down</em> from <code>.week</code></h2>
           <ul>
             <li><button class="a">firstElementChild</button></li>
             <li><button class="b">lastElementChild</button></li>
@@ -40,24 +41,24 @@
         </section>
     
         <section>
-          <h2>Select up from <code>.selected</code></h2>
+          <h2>Select <em>up</em> from <code>.selected</code></h2>
           <ul>
             <li><button class="e">parentElement</button></li>
+            <li><button class="f">closest('.calendar')</button></li>
           </ul>
-          <p>Be sure to have a single day selected first! (If multiple days are selected, only the first one in the document will be acted on)</p>
         </section>
     
         <section>
-          <h2>Relative to <code>.selected</code></h2>
+          <h2>Relative to <code>.selected</code>, <em>sideways</em></h2>
           <ul>
-            <li><button class="f">nextElementSibling</button></li>
-            <li><button class="g">previousElementSibling</button></li>
+            <li><button class="g">nextElementSibling</button></li>
+            <li><button class="h">previousElementSibling</button></li>
           </ul>
           <p>Why does it fail when you get to the end or beginning (check the "console")</p>
-          <p>Be sure to have a single day selected first! (If multiple days are selected, only the first one in the document will be acted on)</p>
         </section>
       </section>
     </main>
+    <footer class="console"></footer>
     
 
 
