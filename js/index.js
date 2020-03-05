@@ -70,12 +70,6 @@ document.querySelector('.clear').addEventListener('click', clearAllSelected);
 window.addEventListener('load', selectTheWeekList)
 
 
-
-// Share:
-// https://zellwk.com/blog/dom-traversals/
-
-// Build:
-// Grid of images where selected moved and displays the next image
-
-// Also:
-// childElementCount
+// "How many children does this element have?"
+// document.querySelector('.selected').childElementCount
+// document.querySelector('.selected').children.length
