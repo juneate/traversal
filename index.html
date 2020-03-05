@@ -8,6 +8,47 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
+
+    <section class="calendar">
+      <ul class="week">
+        <li class="day sun">Sunday</li>
+        <li class="day mon">Monday</li>
+        <li class="day tue">Tuesday</li>
+        <li class="day wed">Wednesday</li>
+        <li class="day thu">Thursday</li>
+        <li class="day fri">Friday</li>
+        <li class="day sat">Saturday</li>
+      </ul>
+    </section>
+
+
+
+    <button class="clear">Clear all selected</button>
+
+    <h2>Select down from <code>.week</code></h2>
+    <ul class="controls">
+      <li><button class="a">firstElementChild</button></li>
+      <li><button class="b">lastElementChild</button></li>
+      <li><button class="c">children</button></li>
+      <li><button class="d">children[3]</button> (Can also be done with <code>querySelectorAll('.day')[3]</code>)</li>
+    </ul>
+
+    <h2>Select up from <code>.selected</code></h2>
+    <p>Be sure to have a single day selected first! (If multiple days are selected, only the first one in the document will be acted on)</p>
+    <ul class="controls">
+      <li><button class="e">parentElement</button></li>
+    </ul>
+
+
+    <h2>Relative to <code>.selected</code></h2>
+    <p>Be sure to have a single day selected first! (If multiple days are selected, only the first one in the document will be acted on)</p>
+    <ul class="controls">
+      <li><button class="f">nextElementSibling</button> (What happens when it hits the end?)</li>
+      <li><button class="g">previousElementSibling</button> (What happens when it hits the beginning?)</li>
+    </ul>
+
+
+
     <script src="js/index.js"></script>
   </body>
 </html>

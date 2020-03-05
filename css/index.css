@@ -1,0 +1,56 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+	padding: 1em;
+}
+
+.calendar {
+	position: relative;
+	padding: 1em;
+	background-color: lightgrey;
+}
+.calendar::before {
+	content: ".calendar"
+}
+.week {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 1em;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: 0.25em;
+	background-color: grey;
+}
+.week::before {
+	content: ".week"
+}
+.day {
+	flex-grow: 1;
+	text-align: center;
+	padding: 1em;
+	font-family: 'arial narrow', arial, helvetica, sans-serif;
+}
+.selected {
+	outline: 2px solid black;
+}
+
+/* .selected::after {
+	content: " <-- selected";
+} */
+.sun { background-color: crimson; }
+.mon { background-color: coral; }
+.tue { background-color: gold; }
+.wed { background-color: greenyellow; }
+.thu { background-color: mediumturquoise; }
+.fri { background-color: cornflowerblue; }
+.sat { background-color: mediumpurple; }
+
+::before {
+	content: "";
+	position: absolute;
+	top: 0.25em;
+	left: 0.25em;
+	display: block;
+	font-size: 0.5em;
+	font-weight: 900;
+}
